@@ -1,0 +1,59 @@
+Todos os programas forão feitos em python, logo você pode executá-los em sua IDE preferida
+ou simplesmente executar o comando:
+
+$ python EP2.py   ou
+$ python montaGif.py
+
+As tarefas pedidas no enunciado foram implementadas no arquivo EP2.py
+Neste arquivo, além das bibliotecas padrão do python foi utilizado o 
+código do EP1 e a biblioteca numpy.
+
+Para rodar o programa EP2.py é fundamental que este esteja no mesmo diretório que
+o programa EP1.py. Além disto, é necessária a instalação do numpy pelo comando:
+
+$ pip install numpy
+
+Durante a execução será pedido qual teste deseja rodar.
+Digite 1 caso queira o teste de cálculo de autovalores e autovetores.
+Digite 2 caso queira o teste da aplicação da treliça.
+
+Caso tenha digitado 1, o programa pedirá qual arquivo deseja utilizar como input.
+Digite 1 para o input-a
+Digite 2 para o input-b
+Digite 3 e forneça o nome para outro arquivo
+
+Caso tenha digitado 2, o programa pedirá qual arquivo deseja utilizar como input.
+Digite 1 para o input-c
+Digite 2 e forneça o nome para outro arquivo
+
+É fundamental que todos estes arquivos estejam no mesmo diretório de EP2.py
+
+Após rodar o teste, o programa pergunta se deseja continuar rodando outros testes.
+Digite (S ou s) caso queira.
+
+
+
+------------------------------//------------------------------------------
+
+Para fazer os GIFs das vibrações das treliças, execute o programa montaGif.py.
+Este programa utiliza outras bibliotecas externas que precisarão ser instaladas.
+Execute os seguintes comandos:
+
+$ pip install imageio
+$ pip install pygame
+$ pip install PyOpenGL PyOpenGL-accelerate
+
+Ela também importa o código do EP2.py e utiliza o arquivo coordenadas
+então estes deverão estar no mesmo diretório de montaGif.py.
+
+Durante a execução, você deverá passar os seguintes parâmetros para o programa:
+t0 : instante de tempo inicial do intervalo
+tf : instante de tempo final do intervalo
+Passo temporal: o incremento temporal do intervalo [t0,tf]
+Ordem da frequência utilizada de 1 a 5 : A frequência que será utilizada
+Salvar imagens: Se deseja salvar as imagens utilizadas para montar o GIF -> Digite (S ou s) caso queira
+
+Ao final da execução, o GIF será salvo na pasta "gifs" com o nome de treliça_(ordem da frequencia).gif.
+Na pasta "snaps" ficarão salvas as imagens caso tenha selecionado.
+
+OBS: A pasta gifs já possui 5 gifs pré-montadas, uma para cada frequência, calculadas no intervalo [1,200] com passo 1.
